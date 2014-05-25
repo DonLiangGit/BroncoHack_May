@@ -36,6 +36,7 @@ public final class R {
     }
     public static final class id {
         public static final int Banner=0x7f090001;
+<<<<<<< HEAD
         public static final int action_settings=0x7f09000d;
         public static final int button1=0x7f090002;
         public static final int button2=0x7f090003;
@@ -50,6 +51,18 @@ public final class R {
         public static final int textView2=0x7f090008;
         public static final int textView3=0x7f09000a;
         public static final int user_login=0x7f09000e;
+=======
+        public static final int action_settings=0x7f09000a;
+        public static final int button1=0x7f090002;
+        public static final int button2=0x7f090003;
+        public static final int button3=0x7f090004;
+        public static final int container=0x7f090000;
+        public static final int editText1=0x7f090007;
+        public static final int editText2=0x7f090006;
+        public static final int imgLogo=0x7f090009;
+        public static final int textView1=0x7f090005;
+        public static final int textView2=0x7f090008;
+>>>>>>> 043e54807380b3109cbb1e96329c5066dcb7b975
     }
     public static final class layout {
         public static final int activity_main_screen=0x7f030000;
@@ -64,18 +77,27 @@ public final class R {
     public static final class menu {
         public static final int main_screen=0x7f080000;
         public static final int sign_in=0x7f080001;
+<<<<<<< HEAD
         public static final int sign_up=0x7f080002;
         public static final int splash_screen=0x7f080003;
+=======
+        public static final int splash_screen=0x7f080002;
+>>>>>>> 043e54807380b3109cbb1e96329c5066dcb7b975
     }
     public static final class string {
         public static final int action_settings=0x7f060002;
         public static final int app_name=0x7f060000;
         public static final int hello_world=0x7f060001;
+<<<<<<< HEAD
         public static final int title_activity_sign_in=0x7f060006;
         public static final int title_activity_sign_up=0x7f060007;
         public static final int title_activity_splash_screen=0x7f060005;
         public static final int user_login=0x7f060003;
         public static final int user_logout=0x7f060004;
+=======
+        public static final int title_activity_sign_in=0x7f060004;
+        public static final int title_activity_splash_screen=0x7f060003;
+>>>>>>> 043e54807380b3109cbb1e96329c5066dcb7b975
     }
     public static final class style {
         /** 
@@ -104,6 +126,9 @@ public final class R {
  All customizations that are NOT specific to a particular API-level can go here. 
          */
         public static final int AppTheme=0x7f070001;
+<<<<<<< HEAD
         public static final int LoginFormContainer=0x7f070002;
+=======
+>>>>>>> 043e54807380b3109cbb1e96329c5066dcb7b975
     }
 }

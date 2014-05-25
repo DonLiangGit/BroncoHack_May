@@ -22,7 +22,11 @@
         android:layout_below="@+id/Banner"
         android:layout_marginLeft="23dp"
         android:layout_marginTop="24dp"
+<<<<<<< HEAD
         android:text="Username:"
+=======
+        android:text="Username"
+>>>>>>> 043e54807380b3109cbb1e96329c5066dcb7b975
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:textColor="#FFFFFF" />
 
@@ -44,7 +48,11 @@
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/editText2"
         android:layout_below="@+id/editText1"
+<<<<<<< HEAD
         android:text="Password:"
+=======
+        android:text="Password"
+>>>>>>> 043e54807380b3109cbb1e96329c5066dcb7b975
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:textColor="#FFFFFF" />
 
@@ -64,7 +72,11 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/editText2"
         android:layout_centerHorizontal="true"
+<<<<<<< HEAD
         android:text="Sign in"
+=======
+        android:text="Log in"
+>>>>>>> 043e54807380b3109cbb1e96329c5066dcb7b975
         android:textColor="#FFFFFF" />
 
 </RelativeLayout>
