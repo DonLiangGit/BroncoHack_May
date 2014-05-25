@@ -1,12 +1,9 @@
 package com.example.quakesfanconnect;
 
-
 import android.app.Activity;
 import android.app.ActionBar;
 import android.app.Fragment;
-import android.content.Intent;
 import android.os.Bundle;
-import android.os.Handler;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -14,44 +11,24 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.os.Build;
 
-public class SplashScreen extends Activity {
+public class SignUp extends Activity {
 
-	private static int SPLASH_TIME_OUT = 3000;
-	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
-		
-		
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_splash_screen);
+		setContentView(R.layout.activity_sign_up);
 
 		if (savedInstanceState == null) {
 			getFragmentManager().beginTransaction()
 					.add(R.id.container, new PlaceholderFragment()).commit();
-			new Handler().postDelayed(new Runnable() {
-	            // Showing splash screen with a timer. This will be useful when you
-	        	@Override
-	            public void run() {
-	                // This method will be executed once the timer is over
-	                // Start your app main activity
-	                Intent i = new Intent(SplashScreen.this, MainScreen.class);
-	                startActivity(i);	 
-	                // close this activity
-	                finish();
-	                overridePendingTransition(R.animator.right_in, R.animator.left_out);
-	            }
-	        }, SPLASH_TIME_OUT);
 		}
-		
-
 	}
 
-	
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 
 		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.splash_screen, menu);
+		getMenuInflater().inflate(R.menu.sign_up, menu);
 		return true;
 	}
 
@@ -78,7 +55,7 @@ public class SplashScreen extends Activity {
 		@Override
 		public View onCreateView(LayoutInflater inflater, ViewGroup container,
 				Bundle savedInstanceState) {
-			View rootView = inflater.inflate(R.layout.fragment_splash_screen,
+			View rootView = inflater.inflate(R.layout.activity_sign_up,
 					container, false);
 			return rootView;
 		}

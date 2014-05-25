@@ -24,6 +24,9 @@ public class SignIn extends Activity {
 		}
 	}
 
+	public void onBackPressed() {
+	       this.finish();
+	}
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 
@@ -55,7 +58,7 @@ public class SignIn extends Activity {
 		@Override
 		public View onCreateView(LayoutInflater inflater, ViewGroup container,
 				Bundle savedInstanceState) {
-			View rootView = inflater.inflate(R.layout.fragment_sign_in,
+			View rootView = inflater.inflate(R.layout.activity_sign_in,
 					container, false);
 			return rootView;
 		}

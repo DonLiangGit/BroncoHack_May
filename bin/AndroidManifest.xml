@@ -31,6 +31,10 @@
             android:name="com.example.quakesfanconnect.SignIn"
             android:label="@string/title_activity_sign_in" >
         </activity>
+        <activity
+            android:name="com.example.quakesfanconnect.SignUp"
+            android:label="@string/title_activity_sign_up" >
+        </activity>
     </application>
 
 </manifest>

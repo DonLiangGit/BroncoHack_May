@@ -1,5 +1,6 @@
 package com.example.quakesfanconnect;
 
+
 import android.app.Activity;
 import android.app.ActionBar;
 import android.app.Fragment;
@@ -23,14 +24,24 @@ public class MainScreen extends Activity {
         setContentView(R.layout.activity_main_screen);
         
         final Button FBButton =(Button)findViewById(R.id.button1);
-        final Button SignInButton =(Button)findViewById(R.id.button2);
-        final Button SignUpButton =(Button)findViewById(R.id.button3);
+        final Button SignUpButton =(Button)findViewById(R.id.button2);
+        final Button SignInButton =(Button)findViewById(R.id.button3);
         FBButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
             	Intent i = new Intent(MainScreen.this, SignIn.class);
                 startActivity(i);	 
                 // close this activity
-                finish();
+                // finish();
+                overridePendingTransition(R.animator.right_in, R.animator.left_out);
+            }
+        });
+        SignUpButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+            	Intent i = new Intent(MainScreen.this, SignUp.class);
+                startActivity(i);	 
+                // close this activity
+                //finish();
+                overridePendingTransition(R.animator.right_in, R.animator.left_out);
             }
         });
         SignInButton.setOnClickListener(new View.OnClickListener() {
@@ -38,15 +49,8 @@ public class MainScreen extends Activity {
             	Intent i = new Intent(MainScreen.this, SignIn.class);
                 startActivity(i);	 
                 // close this activity
-                finish();
-            }
-        });
-        SignUpButton.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-            	Intent i = new Intent(MainScreen.this, SignIn.class);
-                startActivity(i);	 
-                // close this activity
-                finish();
+                //finish();
+                overridePendingTransition(R.animator.right_in, R.animator.left_out);
             }
         });
     }   
