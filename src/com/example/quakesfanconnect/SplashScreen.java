@@ -1,5 +1,6 @@
 package com.example.quakesfanconnect;
 
+
 import android.app.Activity;
 import android.app.ActionBar;
 import android.app.Fragment;
@@ -15,7 +16,7 @@ import android.os.Build;
 
 public class SplashScreen extends Activity {
 
-	private static int SPLASH_TIME_OUT = 1000;
+	private static int SPLASH_TIME_OUT = 3000;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +38,7 @@ public class SplashScreen extends Activity {
 	                startActivity(i);	 
 	                // close this activity
 	                finish();
+	                overridePendingTransition(R.animator.right_in, R.animator.left_out);
 	            }
 	        }, SPLASH_TIME_OUT);
 		}

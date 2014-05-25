@@ -1,5 +1,6 @@
 package com.example.quakesfanconnect;
 
+
 import android.app.Activity;
 import android.app.ActionBar;
 import android.app.Fragment;
@@ -30,7 +31,8 @@ public class MainScreen extends Activity {
             	Intent i = new Intent(MainScreen.this, SignIn.class);
                 startActivity(i);	 
                 // close this activity
-                finish();
+                // finish();
+                overridePendingTransition(R.animator.right_in, R.animator.left_out);
             }
         });
         SignInButton.setOnClickListener(new View.OnClickListener() {
@@ -38,7 +40,8 @@ public class MainScreen extends Activity {
             	Intent i = new Intent(MainScreen.this, SignIn.class);
                 startActivity(i);	 
                 // close this activity
-                finish();
+                //finish();
+                overridePendingTransition(R.animator.right_in, R.animator.left_out);
             }
         });
         SignUpButton.setOnClickListener(new View.OnClickListener() {
@@ -46,7 +49,8 @@ public class MainScreen extends Activity {
             	Intent i = new Intent(MainScreen.this, SignIn.class);
                 startActivity(i);	 
                 // close this activity
-                finish();
+                //finish();
+                overridePendingTransition(R.animator.right_in, R.animator.left_out);
             }
         });
     }   
