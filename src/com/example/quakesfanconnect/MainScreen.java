@@ -22,8 +22,26 @@ public class MainScreen extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_screen);
         
-        final Button button =(Button)findViewById(R.id.button2);
-        button.setOnClickListener(new View.OnClickListener() {
+        final Button FBButton =(Button)findViewById(R.id.button1);
+        final Button SignInButton =(Button)findViewById(R.id.button2);
+        final Button SignUpButton =(Button)findViewById(R.id.button3);
+        FBButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+            	Intent i = new Intent(MainScreen.this, SignIn.class);
+                startActivity(i);	 
+                // close this activity
+                finish();
+            }
+        });
+        SignInButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+            	Intent i = new Intent(MainScreen.this, SignIn.class);
+                startActivity(i);	 
+                // close this activity
+                finish();
+            }
+        });
+        SignUpButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
             	Intent i = new Intent(MainScreen.this, SignIn.class);
                 startActivity(i);	 
